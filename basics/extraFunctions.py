@@ -17,8 +17,6 @@ def greatester():
 
 def Averager():
     pNoCount, nNoCount, zNoCount = 0, 0, 0
-    pNoSum, nNoCount, zNoCount = 0, 0, 0
-    pNoAvg, nNoAvg, zNoAvg = 0, 0, 0
     inputElements = input("Enter numbers for average: ")
     inputElementsList = list(inputElements.split(' '))
     for element in inputElementsList:
@@ -64,7 +62,7 @@ def rockPaperScissors():
 '''}
 
     game_entities = ['rock', 'paper', 'scissors']
-    user_won, computer_won, match_draw = False, False, False
+    user_won, match_draw = False, False
 
     user_won_conditions = [('rock', 'scissors'),
                            ('paper', 'rock'), ('scissors', 'paper')]
@@ -88,10 +86,11 @@ def rockPaperScissors():
 
     print(f'User Chose {user_choice}: {rpsPriority[user_choice]}')
     print(
-            f'Computer Chose {computer_choice}: {rpsPriority[computer_choice]}')
+            f'Computer Chose {computer_choice}: {rpsPriority[computer_choice]}'
+    )
 
     if user_won:
-        print(f'You are the winner')
+        print('You are the winner')
     elif match_draw:
         print('Match is drawn')
     else:
