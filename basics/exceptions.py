@@ -39,7 +39,7 @@ for a_class_exception in [A, B, C]:
     except KeyboardInterrupt:
         print('Bye fella, unable to calculate such dumb thing 10**10**10')
         print('will run 3 times because loop is executing 3 times', end='')
-        print(f': {a_class_exception}')
+        print(f': {a_class_exception}.')
     except A:
         print(f'Class "AA" occurred :{a_class_exception}')
     except B:
