@@ -1,0 +1,9 @@
+mongodump --uri "mongodb://anuj_quibble:Myquibble321@i.devtechnosys.tech/DB_quibble"
+
+mongorestore -h host.com:port -d dbname_test
+
+mongorestore -h localhost:27017 -d quibblerm
+
+
+expandimotech-c5e9279
+gurpreet@team.expandimo.com
